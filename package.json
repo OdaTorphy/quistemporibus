@@ -1,0 +1,72 @@
+{
+  "name": "quistemporibus",
+  "description": "Create Ethereum-powered apps with one command",
+  "version": "1.0.0",
+  "bin": {
+    "create-eth-app": "./dist/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/OdaTorphy/quistemporibus.git/issues"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/config-lerna-scopes": "^8.3.4",
+    "@types/cross-spawn": "^6.0.1",
+    "@types/fs-extra": "^9.0.1",
+    "@types/got": "9.6.2",
+    "@types/node": "^13.7.0",
+    "@types/prompts": "2.0.1",
+    "@types/rimraf": "^2.0.3",
+    "@types/tar": "4.0.3",
+    "@zeit/ncc": "^0.21.1",
+    "chalk": "^3.0.0",
+    "commander": "^4.1.0",
+    "commitizen": "^4.0.3",
+    "cosmiconfig": "^6.0.0",
+    "cpy": "^8.0.0",
+    "cross-spawn": "^7.0.1",
+    "got": "^10.4.0",
+    "handlebars": "^4.7.6",
+    "husky": "^4.0.7",
+    "lerna": "3.20.2",
+    "make-dir": "^3.0.0",
+    "prettier": "^1.19.1",
+    "promisepipe": "^3.0.0",
+    "prompts": "^2.3.0",
+    "shx": "^0.3.2",
+    "tar": "^6.0.1",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "3.7.3",
+    "update-check": "^1.5.3",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "files": [
+    "/dist"
+  ],
+  "homepage": "https://github.com/OdaTorphy/quistemporibus.git",
+  "keywords": [
+    "esse",
+    "react",
+    "necessitatibus",
+    "quo",
+    "yarn"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OdaTorphy/quistemporibus.git"
+  },
+  "scripts": {
+    "build": "ncc build ./src/index.ts --out dist/",
+    "clean": "shx rm -rf ./dist",
+    "lint": "tslint --config tslint.json --project .",
+    "prettier": "prettier --config .prettierrc --write '**/*.{js,json,md,sol,ts}'",
+    "prettier:list-different": "prettier --config .prettierrc --list-different '**/*.{js,json,md,sol,ts}'",
+    "watch": "ncc build ./src/index.ts --out dist/ --watch"
+  },
+  "author": "IsacDicki"
+}
